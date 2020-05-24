@@ -18,7 +18,7 @@ body,
 body {
     background: url('../img/capa.png'), 
                 url('../img/ruido.png'),
-                linear-gradient(50deg, #FF4169, #7C26F8);
+                linear-gradient(45deg, #AB05F2, #5207F2);
     background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
 }
@@ -57,18 +57,52 @@ li.nav-link a:hover {
 
 /* -- Imagem de capa -- */
 .capa {
-    border: 1px solid red;
     display: table;
+    width: 100vw;
 }
 
 .textCapa {
     color: whitesmoke;
     display: table-cell;
     text-align: center;
+    vertical-align: middle;
 }
 
+/* -- Botão capa */
+.btn-custom {
+    color: whitesmoke;
+    border-radius: 500px;
+    margin: 0px 15px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+    background: #F25C05;
+    color: #FFF;
+}
+
+.btn-roxo:hover {
+    background: #230A59;
+    color: #FFF;
+}
+
+.btn-branco {
+    border: 2.5px solid #FFF;
+    color: #FFF;
+}
+
+.btn-branco:hover {
+    background: #FFF;
+    color: #230A59;
+}
 /* ============ Tipografia ============ */
 h1 {
     font-size: 100px;
     font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
 }
