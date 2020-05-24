@@ -1,0 +1,74 @@
+/*
+*
+* @author Michael Santos
+* @version 0.1
+*/
+/* Reset CSS - Simplificado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============ Barra de navegação ============ */
+body, 
+.capa {
+    height: 100vh;
+}
+body {
+    background: url('../img/capa.png'), 
+                url('../img/ruido.png'),
+                linear-gradient(50deg, #FF4169, #7C26F8);
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* -- Barra de navegação --*/
+
+.img-logo {
+    background-image: url('../img/spotify.svg');
+    background-size: contain;
+    color: transparent;
+    display: block;
+    height: 40px;
+    width: 132px;
+}
+
+nav.navbar-transparente {
+    background: rgba(0, 0, 0, 0.57);
+    padding: 15px 0px;
+}
+
+.divisor {
+    background-color: whitesmoke;
+    margin: 13px 10px;
+    height: 16px;
+    width: 1px;
+}
+
+li.nav-link a {
+    color: whitesmoke; 
+}
+
+li.nav-link a:hover {
+    color: #9BF0E1;
+    text-decoration: none;
+}
+
+/* -- Imagem de capa -- */
+.capa {
+    border: 1px solid red;
+    display: table;
+}
+
+.textCapa {
+    color: whitesmoke;
+    display: table-cell;
+    text-align: center;
+}
+
+/* ============ Tipografia ============ */
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
