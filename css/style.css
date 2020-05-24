@@ -21,6 +21,7 @@ body {
                 linear-gradient(45deg, #AB05F2, #5207F2);
     background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 /* -- Barra de navegação --*/
@@ -68,7 +69,7 @@ li.nav-link a:hover {
     vertical-align: middle;
 }
 
-/* -- Botão capa */
+/* -- Botões capa */
 .btn-custom {
     color: whitesmoke;
     border-radius: 500px;
@@ -99,10 +100,67 @@ li.nav-link a:hover {
     background: #FFF;
     color: #230A59;
 }
+
+/* -- Seção Serviços -- */
+#servicos {
+    background: #FFF;
+    padding: 20px 0px;
+}
+
+.albuns {
+    padding: 10px 0px 10px 0px;
+}
+
+/* Efeitos de animação nas imagens */
+.img-albun {
+    transition: 500ms;
+    width: 100vw;
+}
+
+.img-albun:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* -- Seção Informações */
+#recursos {
+    color: #FFF;
+    padding: 20px 0px;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg); /* IE9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari e Opera*/
+    padding-left: 100px;
+    transform: rotate(35deg);
+}
+
 /* ============ Tipografia ============ */
 h1 {
     font-size: 100px;
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding: 5px 0px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding: 5px 0px;
+}
+
+#servicos h3 {
+    color: #5207F2;
+}
+
+#recursos h3 {
+    color: #21038C;
+    text-decoration: underline;
 }
