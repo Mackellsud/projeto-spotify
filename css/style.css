@@ -18,7 +18,7 @@ body,
 body {
     background: url('../img/capa.png'), 
                 url('../img/ruido.png'),
-                linear-gradient(45deg, #AB05F2, #5207F2);
+                linear-gradient(45deg, rgb(242, 5, 104), #5207F2);
     background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
@@ -47,11 +47,15 @@ nav.navbar-transparente {
     width: 1px;
 }
 
-li.nav-link a {
+/* Formatação Links */
+
+li.nav-link a,
+footer .navMenu a {
     color: whitesmoke; 
 }
 
-li.nav-link a:hover {
+li.nav-link a:hover,
+footer .navMenu a:hover {
     color: #9BF0E1;
     text-decoration: none;
 }
@@ -134,6 +138,29 @@ li.nav-link a:hover {
     transform: rotate(35deg);
 }
 
+/* -- Rodape -- */
+footer {
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.navMenu a {
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navMenu {
+    list-style: none;
+}
+
+.redesSociais {
+    float: right;
+    margin-left: 24px;
+}
+
+
 /* ============ Tipografia ============ */
 h1 {
     font-size: 100px;
@@ -154,6 +181,12 @@ h3 {
     font-weight: 700;
     letter-spacing: -0.04em;
     padding: 5px 0px;
+}
+
+#rodape h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 #servicos h3 {
